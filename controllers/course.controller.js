@@ -5,8 +5,8 @@ import CourseModel from "../models/course.model.js";
 // create course
 export const createCourse = CatchAsyncError(async(req, res, next) => {
     try{
-        const {title} = req.body;
         const data = req.body;
+        const {title} = data;
 
         const isTitleExist = await CourseModel.findOne({title});
         if(isTitleExist) {

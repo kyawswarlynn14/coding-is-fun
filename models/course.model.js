@@ -20,7 +20,7 @@ const courseSchema = new Schema ({
         ref: "Category",
         required: [true, "Please enter course category"]
     },
-    discription:{ type: String },
+    description:{ type: String },
     cover: { type: String },
     coverVideo: { type : String },
     paid: {
